@@ -1,17 +1,18 @@
-class home{  
- public static void main(String args[]){  
-  int r,sum=0,temp;    
-  int n=454;//It is the number variable to be checked for palindrome  
-  
-  temp=n;    
-  while(n>0){    
-   r=n%10;  //getting remainder  
-   sum=(sum*10)+r;    
-   n=n/10;    
-  }    
-  if(temp==sum)    
-   System.out.println("palindrome number ");    
-  else    
-   System.out.println("not palindrome");    
-}  
-}  
+class home
+{
+   public static void main(String args[]) 
+    {   
+       
+      Scanner s= new Scanner(System.in);
+        
+         System.out.println("Enter the width of the Triangle:");
+         double b= s.nextDouble();
+ 
+         System.out.println("Enter the height of the Triangle:");
+          double h= s.nextDouble();
+ 
+                  //Area = (width*height)/2
+      double area=(b*h)/2;
+      System.out.println("Area of Triangle is: " + area);      
+   }
+}
