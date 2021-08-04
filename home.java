@@ -1,15 +1,32 @@
-class Main {
-
-  public static void main(String[] args) {
-    
-    System.out.println("Enter two numbers");
-    int first = 10;
-    int second = 20;
-    
-    System.out.println(first + " " + second);
-
-    // add two numbers
-    int sum = first + second;
-    System.out.println("The sum is: " + sum);
-  }
+import java.io.*;
+  
+// Java code to demonstrate right star triangle
+public class GeeksForGeeks {
+    // Function to demonstrate printing pattern
+    public static void StarRightTriangle(int n)
+    {
+        int a, b;
+  
+        // outer loop to handle number of rows
+        // k in this case
+        for (a = 0; a < n; a++) {
+  
+            // inner loop to handle number of columns
+            // values changing acc. to outer loop
+            for (b = 0; b <= a; b++) {
+                // printing stars
+                System.out.print("* ");
+            }
+  
+            // end-line
+            System.out.println();
+        }
+    }
+  
+    // Driver Function
+    public static void main(String args[])
+    {
+        int k = 5;
+        StarRightTriangle(k);
+    }
 }
